@@ -18,14 +18,52 @@ const Books=()=> {
         console.log(err)
       }
     }
+    fetchAllBooks()
   },[]  )
     return (
       <div>
         
         <Pseudo_Nav/>
+        <div className="container">
 
-        <p>Books</p>
-        
+        <h1>Books</h1>
+
+
+        <table className="table table-hover">
+  <tr>
+    <th>Book ID</th>
+    <th>Book Name</th>
+    <th>Book Author</th>
+    <th>Book Description</th>
+  </tr>
+
+  
+
+
+
+
+
+  {books.map((book) =>(
+  <tr key={book.book_id}>
+    <td>{book.book_id}</td>
+    <td>{book.book_name}</td>
+    <td>{book.book_author}</td>
+    <td>{book.book_description}</td>
+  </tr>
+  
+  
+
+  
+  ))}
+
+</table>
+
+
+
+
+
+
+        </div>
         
       </div>
     )
