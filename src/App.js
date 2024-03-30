@@ -4,6 +4,7 @@ import Update from "./pages/update";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Delete from "./pages/delete";
 import { Component } from "react";
+import Search from "./pages/search";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/add" element={<Add/>}/>
         <Route path="/update" element={<Update/>}/>
         <Route path="/delete" element={<Delete/>}/>
+        <Route path="/search" element={<Search/>}/>
       </Routes>
       </BrowserRouter>
     </div>
